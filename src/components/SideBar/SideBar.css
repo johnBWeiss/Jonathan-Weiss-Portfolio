@@ -1,0 +1,544 @@
+.sideBarContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 20px;
+  height: 90%;
+  background-color: black;
+  background-image: url("../../assets/images/projBackground.jpg");
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 30px;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 12%;
+  left: 8%;
+  -webkit-animation: sideBar 1s linear 0s 1 forwards;
+  animation: sideBar 1s linear 0s 1 forwards;
+}
+
+.noShowSideBar {
+  display: none;
+}
+
+@-webkit-keyframes sideBar {
+  0% {
+    height: 0px;
+    width: 20px;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  50% {
+    height: 400px;
+    width: 20px;
+    -webkit-transform: translateX(-30%);
+    transform: translateX(-30%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    width: 200px;
+    height: 400px;
+  }
+}
+
+@keyframes sideBar {
+  0% {
+    height: 0px;
+    width: 20px;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  50% {
+    height: 400px;
+    width: 20px;
+    -webkit-transform: translateX(-30%);
+    transform: translateX(-30%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    width: 200px;
+    height: 400px;
+  }
+}
+
+.singleSideBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 70%;
+  padding-bottom: 3%;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+}
+
+.singleSideBar:hover {
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+
+.sideBarLogo {
+  height: 0px;
+  -webkit-animation: sideBarLogo 1.3s linear 0s 1 forwards;
+  animation: sideBarLogo 1.3s linear 0s 1 forwards;
+}
+
+@-webkit-keyframes sideBarLogo {
+  0% {
+    height: 0px;
+  }
+
+  50% {
+    height: 20px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  80% {
+    height: 50px;
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+  }
+  100% {
+    height: 50px;
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes sideBarLogo {
+  0% {
+    height: 0px;
+  }
+
+  50% {
+    height: 20px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  80% {
+    height: 50px;
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+  }
+  100% {
+    height: 50px;
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+  }
+}
+
+.sideBarTitle {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  width: 60px;
+  -webkit-animation: sideBarTitle 2.3s linear 0s 1 forwards;
+  animation: sideBarTitle 2.3s linear 0s 1 forwards;
+}
+
+@-webkit-keyframes sideBarTitle {
+  0% {
+    font-size: 0px;
+  }
+
+  30% {
+    font-size: 0px;
+  }
+  40% {
+    font-size: 16px;
+
+    color: white;
+  }
+  100% {
+    font-size: 16px;
+
+    color: white;
+  }
+}
+
+@keyframes sideBarTitle {
+  0% {
+    font-size: 0px;
+  }
+
+  30% {
+    font-size: 0px;
+  }
+  40% {
+    font-size: 16px;
+
+    color: white;
+  }
+  100% {
+    font-size: 16px;
+
+    color: white;
+  }
+}
+
+.sideBarFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  width: 50vw;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 30px;
+  padding-top: 3.5%;
+  padding-bottom: 3.5%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media (max-width: 1600px) {
+  .sideBarContainer {
+    left: 4%;
+  }
+}
+
+@media (max-width: 1800px) {
+  .singleSideBar:hover {
+    -webkit-transform: scale(120%);
+    -ms-transform: scale(120%);
+    transform: scale(120%);
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    border-bottom: 1px solid transparent;
+  }
+
+  .sideBarContainer {
+    left: 4%;
+  }
+
+  .singleSideBar {
+    -webkit-transform: scale(100%);
+    -ms-transform: scale(100%);
+    transform: scale(100%);
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .sideBarContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 20px;
+    height: 0px;
+    background-color: transparent;
+    background-image: none;
+  }
+
+  .sideBarContainer {
+    font-size: 0px;
+  }
+  @-webkit-keyframes sideBarTitle {
+    0% {
+      font-size: 0px;
+    }
+
+    100% {
+      font-size: 0px;
+    }
+  }
+  @keyframes sideBarTitle {
+    0% {
+      font-size: 0px;
+    }
+
+    100% {
+      font-size: 0px;
+    }
+  }
+
+  @-webkit-keyframes sideBar {
+    0% {
+      -webkit-transform: translateX(-200%);
+      transform: translateX(-200%);
+      height: 0px;
+      width: 0px;
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+
+    50% {
+      height: 70%;
+      width: 0px;
+      -webkit-transform: translateX(-30%);
+      transform: translateX(-30%);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      width: 0px;
+      height: 70%;
+    }
+  }
+
+  @keyframes sideBar {
+    0% {
+      -webkit-transform: translateX(-200%);
+      transform: translateX(-200%);
+      height: 0px;
+      width: 0px;
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+
+    50% {
+      height: 70%;
+      width: 0px;
+      -webkit-transform: translateX(-30%);
+      transform: translateX(-30%);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      width: 0px;
+      height: 70%;
+    }
+  }
+
+  @-webkit-keyframes sideBarLogo {
+    0% {
+      height: 0px;
+    }
+
+    50% {
+      height: 20px;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    80% {
+      height: 60px;
+      -webkit-transform: rotate(720deg);
+      transform: rotate(720deg);
+    }
+    100% {
+      height: 60px;
+      -webkit-transform: rotate(720deg);
+      transform: rotate(720deg);
+    }
+  }
+
+  @keyframes sideBarLogo {
+    0% {
+      height: 0px;
+    }
+
+    50% {
+      height: 20px;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    80% {
+      height: 60px;
+      -webkit-transform: rotate(720deg);
+      transform: rotate(720deg);
+    }
+    100% {
+      height: 60px;
+      -webkit-transform: rotate(720deg);
+      transform: rotate(720deg);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  @-webkit-keyframes sideBarLogo {
+    0% {
+      height: 0px;
+    }
+
+    50% {
+      height: 20px;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    80% {
+      height: 50px;
+      -webkit-transform: rotate(720deg);
+      transform: rotate(720deg);
+    }
+    100% {
+      height: 50px;
+      -webkit-transform: rotate(720deg);
+      transform: rotate(720deg);
+    }
+  }
+  @keyframes sideBarLogo {
+    0% {
+      height: 0px;
+    }
+
+    50% {
+      height: 20px;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    80% {
+      height: 50px;
+      -webkit-transform: rotate(720deg);
+      transform: rotate(720deg);
+    }
+    100% {
+      height: 50px;
+      -webkit-transform: rotate(720deg);
+      transform: rotate(720deg);
+    }
+  }
+
+  @-webkit-keyframes sideBar {
+    0% {
+      height: 0px;
+      width: 20px;
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+
+    50% {
+      height: 395px;
+      -webkit-transform: translateX(-30%);
+      transform: translateX(-30%);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      height: 395px;
+    }
+  }
+
+  @keyframes sideBar {
+    0% {
+      height: 0px;
+      width: 20px;
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+
+    50% {
+      height: 395px;
+      -webkit-transform: translateX(-30%);
+      transform: translateX(-30%);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      height: 395px;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  @-webkit-keyframes sideBarLogo {
+    0% {
+      height: 0px;
+    }
+
+    50% {
+      height: 10px;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    80% {
+      height: 35px;
+      -webkit-transform: rotate(720deg);
+      transform: rotate(720deg);
+    }
+    100% {
+      height: 35px;
+      -webkit-transform: rotate(720deg);
+      transform: rotate(720deg);
+    }
+  }
+  @keyframes sideBarLogo {
+    0% {
+      height: 0px;
+    }
+
+    50% {
+      height: 10px;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    80% {
+      height: 35px;
+      -webkit-transform: rotate(720deg);
+      transform: rotate(720deg);
+    }
+    100% {
+      height: 35px;
+      -webkit-transform: rotate(720deg);
+      transform: rotate(720deg);
+    }
+  }
+}
+@media (max-height: 650px) {
+  @-webkit-keyframes sideBarLogo {
+    0% {
+      height: 0px;
+    }
+
+    50% {
+      height: 10px;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    80% {
+      height: 35px;
+      -webkit-transform: rotate(720deg);
+      transform: rotate(720deg);
+    }
+    100% {
+      height: 35px;
+      -webkit-transform: rotate(720deg);
+      transform: rotate(720deg);
+    }
+  }
+  @keyframes sideBarLogo {
+    0% {
+      height: 0px;
+    }
+
+    50% {
+      height: 10px;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    80% {
+      height: 35px;
+      -webkit-transform: rotate(720deg);
+      transform: rotate(720deg);
+    }
+    100% {
+      height: 35px;
+      -webkit-transform: rotate(720deg);
+      transform: rotate(720deg);
+    }
+  }
+}
